@@ -18,7 +18,7 @@ class Cluster():
                     print(c)
                     k += 1
         if k >= n:
-            print("K-means работает отлично")
+            print("Данный вид кластеризации работает отлично")
         else:
             for cl in cls:
                 print(cl)
