@@ -5,7 +5,7 @@ print('test1')
 xy = []
 for i in range(1000):
     xy.append([random.randint(-100,100), random.randint(-100,100)])
-#Cluster.clusterring(xy, [], random.randint(2,20))
+Cluster.clusterring(xy, [], random.randint(2,20))
 
 # Тестируем на простых квадратах
 print('test2')
@@ -19,7 +19,7 @@ for i in range(3):
         c3.append([8 + i, 2 + j])
 xy = c1 + c2 + c3
 cls = [c1,c2,c3]
-#Cluster.clusterring(xy, cls, 3)
+Cluster.clusterring(xy, cls, 3)
 
 # Ромб, треугольник, квадрат
 print('test3')
@@ -37,7 +37,7 @@ for i in range(5):
     triangle.append([i,0])
 xy = rhombus + square + triangle
 cls = [rhombus, square, triangle]
-#Cluster.clusterring(xy, cls, 3)
+Cluster.clusterring(xy, cls, 3)
 
 # Окружность с точкой внутри
 print('test4')
@@ -45,7 +45,7 @@ circle = [[5,0],[-5,0],[0,5],[0,-5],[3,4],[-3,-4],[4,3],[-4,-3]]
 point = [[0,0]]
 xy = circle + point
 cls = [circle, point]
-#Cluster.clusterring(xy,cls,2)
+Cluster.clusterring(xy,cls,2)
 
 # "Маленькие" данные
 print('test5')
