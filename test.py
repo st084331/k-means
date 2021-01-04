@@ -2,10 +2,14 @@ from prog import Cluster
 import random
 # Тест на случайных точках
 print('test1')
-xy = []
-for i in range(1000):
-    xy.append([random.randint(-100,100), random.randint(-100,100)])
-Cluster.clusterring(xy, [], random.randint(2,20))
+xy_1 = []
+xy_2 = []
+for i in range(300):
+    xy_1.append([random.randint(-100,60), random.randint(-20,20)])
+    xy_2.append([random.randint(40, 100), random.randint(-70, 100)])
+xy = xy_1 + xy_2
+cls = [xy_1,xy_2]
+Cluster.clusterring(xy, cls, 2)
 
 # Тестируем на простых квадратах
 print('test2')
