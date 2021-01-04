@@ -16,10 +16,12 @@ class Cluster():
                     print('Одинаковые кластеры')
                     print(cl)
                     print(c)
+                    print('|-|')
                     k += 1
         if k >= n:
             print("Данный вид кластеризации работает отлично")
         else:
+            print('Полученные кластеры')
             for cl in cls:
                 print(cl)
 
